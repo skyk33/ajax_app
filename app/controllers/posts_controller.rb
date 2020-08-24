@@ -14,6 +14,7 @@ class PostsController < ApplicationController
   end
 
   def checked
+    #binding.pry
     post = Post.find(params[:id])
     if post.checked
       # 既読だった場合は解除する
